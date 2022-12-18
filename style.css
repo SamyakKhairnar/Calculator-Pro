@@ -20,16 +20,14 @@ body {
 }
 .projectname h2{
     padding-top: 3vh;
-    /* padding-bottom: 1vh; */
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     font-size: 40px;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF;
 
 }
 .container {
     height: 84vh;
-    /* width: 100vw; */
     display: grid;
     place-items: center;
 }
@@ -172,80 +170,54 @@ button#equal {
   
 /* Footer */
 
-.footer-container{
-  padding-bottom: 1.5em;
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
   background-color: black;
   opacity: 0.8;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
+  justify-content: center;
+
 }
-.footer-text{
+.footer p{
+  margin-top: 0.5rem;
+  margin-bottom: auto;
   color: white;
-  padding-top: 0.8em;
-}
-.social-menu ul {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  padding: 0;
-  padding-top: 1em;
-  margin: 0;
-  display: flex;
-}
-.social-menu ul li {
-  list-style: none;
-  margin: 0 10px;
-}
-.social-menu ul li .fa-brands {
-  color: #000000;
-  font-size: 18px;
-  line-height: 30px;
-  transition: .5s;
-}
-.social-menu ul li .fa-brands:hover {
-  color: #ffffff;
-}
-.social-menu ul li a {
-  position: relative;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: white;
+  font-size: 1rem;
   text-align: center;
-  transition: 0.5s;
-  transform: translate(0,0px);
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.social-menu ul li a:hover {
-  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+  text-align: center;
+
 }
-.social-menu ul li:nth-child(1) a:hover {
-  background-color: #3b5999;
+
+.list-item-inlines {
+  display: inline-block;
+  width: 2rem;
+  margin: auto;
+  margin-top: 1rem;
 }
-.social-menu ul li:nth-child(2) a:hover {
-  background-color: #55acee;
+
+.links .fa-brands{
+  color: white;
+  font-size: 1.2rem;
+  transition: .2s;
 }
-.social-menu ul li:nth-child(3) a:hover {
-  background-color: #00405d	;
+
+.links .fb:hover {
+  color: #3b5999;
 }
-.social-menu ul li:nth-child(4) a:hover {
-  background-color: #0077b5;
+.links .tw:hover {
+  color: #55acee;
 }
-.heart{
-  color: red;
-  font-size: 20px;
-  padding-left: 1px;
-  padding-right: 1px;
+.links .git:hover {
+  color: #00405d;
 }
-.owner{
-  padding-right: 5px;
-}
-.owner-name{
-  font-family: 'Tangerine', cursive;
-  font-size: 3vh;
-  font-weight: bolder;
+.links .in:hover {
+  color: #0077b5;
 }
